@@ -38,11 +38,13 @@ namespace foo
 }
 
 #include <qux/Qux.hpp>
+#include <bar/Bar.hpp>
 
 auto main () -> int
 {
     foo::Foo();
     qux::Qux();
+    bar::Bar();
 
     return 0;
 }

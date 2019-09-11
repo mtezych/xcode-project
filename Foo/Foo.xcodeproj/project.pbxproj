@@ -18,6 +18,11 @@
 			isa                    = PBXBuildFile;
 			fileRef                = 3E50EF242328527800E66958; /* libQux.a */
 		};
+		3ED57DD32329A81F00628EF2 = /* libBar.dylib in Frameworks */
+		{
+			isa                    = PBXBuildFile;
+			fileRef                = 3E50EF4D2328981F00E66958; /* libBar.dylib */
+		};
 		/* End   PBXBuildFile section */
 
 		/* Begin PBXContainerItemProxy section */
@@ -43,6 +48,14 @@
 			containerPortal        = 3E50EF482328981D00E66958; /* Bar.xcodeproj */
 			proxyType              = 2;
 			remoteGlobalIDString   = 3E50EF412328981D00E66958;
+			remoteInfo             = Bar;
+		};
+		3ED57DCF2329A81500628EF2 = /* PBXContainerItemProxy */
+		{
+			isa                    = PBXContainerItemProxy;
+			containerPortal        = 3E50EF482328981D00E66958; /* Bar.xcodeproj */
+			proxyType              = 1;
+			remoteGlobalIDString   = 3E50EF402328981D00E66958;
 			remoteInfo             = Bar;
 		};
 		/* End   PBXContainerItemProxy section */
@@ -102,6 +115,7 @@
 			buildActionMask        = 2147483647;
 			files                  =
 			(
+				3ED57DD32329A81F00628EF2, /* libBar.dylib in Frameworks */
 				3E50EF342328883100E66958, /* libQux.a in Frameworks */
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +193,7 @@
 			);
 			dependencies           =
 			(
+				3ED57DD02329A81500628EF2, /* PBXTargetDependency */
 				3E50EF312328882900E66958, /* PBXTargetDependency */
 			);
 			name                   = Foo;
@@ -271,6 +286,12 @@
 			isa                    = PBXTargetDependency;
 			name                   = Qux;
 			targetProxy            = 3E50EF302328882900E66958; /* PBXContainerItemProxy */
+		};
+		3ED57DD02329A81500628EF2 = /* PBXTargetDependency */
+		{
+			isa                    = PBXTargetDependency;
+			name                   = Bar;
+			targetProxy            = 3ED57DCF2329A81500628EF2; /* PBXContainerItemProxy */
 		};
 		/* End   PBXTargetDependency section */
 
@@ -394,7 +415,11 @@
 			isa                    = XCBuildConfiguration;
 			buildSettings          =
 			{
-				HEADER_SEARCH_PATHS                        = Qux/include;
+				HEADER_SEARCH_PATHS                        =
+				(
+					Qux/include,
+					Bar/include,
+				);
 				PRODUCT_NAME                               = "$(TARGET_NAME)";
 			};
 			name                   = Debug;
@@ -404,7 +429,11 @@
 			isa                    = XCBuildConfiguration;
 			buildSettings          =
 			{
-				HEADER_SEARCH_PATHS                        = Qux/include;
+				HEADER_SEARCH_PATHS                        =
+				(
+					Qux/include,
+					Bar/include,
+				);
 				PRODUCT_NAME                               = "$(TARGET_NAME)";
 			};
 			name                   = Release;
