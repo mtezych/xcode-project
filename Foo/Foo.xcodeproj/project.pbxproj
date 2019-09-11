@@ -37,6 +37,14 @@
 			remoteGlobalIDString   = 3E50EF172328527700E66958;
 			remoteInfo             = Qux;
 		};
+		3E50EF4C2328981F00E66958 = /* PBXContainerItemProxy */
+		{
+			isa                    = PBXContainerItemProxy;
+			containerPortal        = 3E50EF482328981D00E66958; /* Bar.xcodeproj */
+			proxyType              = 2;
+			remoteGlobalIDString   = 3E50EF412328981D00E66958;
+			remoteInfo             = Bar;
+		};
 		/* End   PBXContainerItemProxy section */
 
 		/* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +85,14 @@
 			path                   = Qux/Qux.xcodeproj;
 			sourceTree             = "<group>";
 		};
+		3E50EF482328981D00E66958 = /* Bar.xcodeproj */
+		{
+			isa                    = PBXFileReference;
+			lastKnownFileType      = "wrapper.pb-project";
+			name                   = Bar.xcodeproj;
+			path                   = Bar/Bar.xcodeproj;
+			sourceTree             = "<group>";
+		};
 		/* End   PBXFileReference section */
 
 		/* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +114,7 @@
 			isa                    = PBXGroup;
 			children               =
 			(
+				3E50EF482328981D00E66958, /* Bar.xcodeproj */
 				3E50EF1F2328527700E66958, /* Qux.xcodeproj */
 				3E50EF0C232844E700E66958, /* source */
 				3E078C0D2327D15700FE2BC4, /* Products */
@@ -130,6 +147,16 @@
 			children               =
 			(
 				3E50EF242328527800E66958, /* libQux.a */
+			);
+			name                   = Products;
+			sourceTree             = "<group>";
+		};
+		3E50EF492328981D00E66958 = /* Products */
+		{
+			isa                    = PBXGroup;
+			children               =
+			(
+				3E50EF4D2328981F00E66958, /* libBar.dylib */
 			);
 			name                   = Products;
 			sourceTree             = "<group>";
@@ -190,6 +217,10 @@
 			projectReferences      =
 			(
 				{
+					ProductGroup = 3E50EF492328981D00E66958; /* Products */
+					ProjectRef   = 3E50EF482328981D00E66958; /* Bar.xcodeproj */
+				},
+				{
 					ProductGroup = 3E50EF202328527700E66958; /* Products */
 					ProjectRef   = 3E50EF1F2328527700E66958; /* Qux.xcodeproj */
 				},
@@ -209,6 +240,14 @@
 			fileType               = archive.ar;
 			path                   = libQux.a;
 			remoteRef              = 3E50EF232328527800E66958; /* PBXContainerItemProxy */
+			sourceTree             = BUILT_PRODUCTS_DIR;
+		};
+		3E50EF4D2328981F00E66958 = /* libBar.dylib */
+		{
+			isa                    = PBXReferenceProxy;
+			fileType               = "compiled.mach-o.dylib";
+			path                   = libBar.dylib;
+			remoteRef              = 3E50EF4C2328981F00E66958; /* PBXContainerItemProxy */
 			sourceTree             = BUILT_PRODUCTS_DIR;
 		};
 		/* End   PBXReferenceProxy section */
