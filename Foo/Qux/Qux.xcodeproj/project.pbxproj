@@ -7,6 +7,19 @@
 	objectVersion  = 50;
 	objects        =
 	{
+		/* Begin PBXBuildFile section */
+		3E50EF2B23286E2800E66958 = /* Qux.cpp in Sources */
+		{
+			isa                    = PBXBuildFile;
+			fileRef                = 3E50EF2923286E2800E66958; /* Qux.cpp */
+		};
+		3E50EF2C23286E2800E66958 = /* Qux.hpp in Headers */
+		{
+			isa                    = PBXBuildFile;
+			fileRef                = 3E50EF2A23286E2800E66958; /* Qux.hpp */
+		};
+		/* End   PBXBuildFile section */
+
 		/* Begin PBXFileReference section */
 		3E50EF182328527700E66958 = /* libQux.a */
 		{
@@ -15,6 +28,20 @@
 			includeInIndex         = 0;
 			path                   = libQux.a;
 			sourceTree             = BUILT_PRODUCTS_DIR;
+		};
+		3E50EF2923286E2800E66958 = /* Qux.cpp */
+		{
+			isa                    = PBXFileReference;
+			lastKnownFileType      = sourcecode.cpp.cpp;
+			path                   = Qux.cpp;
+			sourceTree             = "<group>";
+		};
+		3E50EF2A23286E2800E66958 = /* Qux.hpp */
+		{
+			isa                    = PBXFileReference;
+			lastKnownFileType      = sourcecode.cpp.h;
+			path                   = Qux.hpp;
+			sourceTree             = "<group>";
 		};
 		/* End   PBXFileReference section */
 
@@ -36,6 +63,8 @@
 			isa                    = PBXGroup;
 			children               =
 			(
+				3E50EF2623286DEE00E66958, /* include */
+				3E50EF2823286DFD00E66958, /* source */
 				3E50EF192328527700E66958, /* Products */
 			);
 			sourceTree             = "<group>";
@@ -50,6 +79,36 @@
 			name                   = Products;
 			sourceTree             = "<group>";
 		};
+		3E50EF2623286DEE00E66958 = /* include */
+		{
+			isa                    = PBXGroup;
+			children               =
+			(
+				3E50EF2723286DF500E66958, /* qux */
+			);
+			path                   = include;
+			sourceTree             = "<group>";
+		};
+		3E50EF2723286DF500E66958 = /* qux */
+		{
+			isa                    = PBXGroup;
+			children               =
+			(
+				3E50EF2A23286E2800E66958, /* Qux.hpp */
+			);
+			path                   = qux;
+			sourceTree             = "<group>";
+		};
+		3E50EF2823286DFD00E66958 = /* source */
+		{
+			isa                    = PBXGroup;
+			children               =
+			(
+				3E50EF2923286E2800E66958, /* Qux.cpp */
+			);
+			path                   = source;
+			sourceTree             = "<group>";
+		};
 		/* End   PBXGroup section */
 
 		/* Begin PBXHeadersBuildPhase section */
@@ -59,6 +118,7 @@
 			buildActionMask        = 2147483647;
 			files                  =
 			(
+				3E50EF2C23286E2800E66958, /* Qux.hpp in Headers */
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +189,7 @@
 			buildActionMask        = 2147483647;
 			files                  =
 			(
+				3E50EF2B23286E2800E66958, /* Qux.cpp in Sources */
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
