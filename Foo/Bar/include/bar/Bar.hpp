@@ -27,12 +27,12 @@
  * OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef QUX_QUX
-#define QUX_QUX
+#ifndef BAR_BAR
+#define BAR_BAR
 
-namespace qux
+namespace bar
 {
-    auto Qux () -> void;
+    auto Bar () -> void;
 }
 
 #endif

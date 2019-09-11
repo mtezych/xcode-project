@@ -27,12 +27,14 @@
  * OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef QUX_QUX
-#define QUX_QUX
+#include <bar/Bar.hpp>
 
-namespace qux
+#include <cstdio>
+
+namespace bar
 {
-    auto Qux () -> void;
+    auto Bar () -> void
+    {
+        std::puts("Bar");
+    }
 }
-
-#endif
