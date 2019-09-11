@@ -37,9 +37,12 @@ namespace foo
     }
 }
 
+#include <qux/Qux.hpp>
+
 auto main () -> int
 {
     foo::Foo();
+    qux::Qux();
 
     return 0;
 }
